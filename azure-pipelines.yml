@@ -7,6 +7,9 @@ trigger:
 - master
 
 pool:
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'build'
   vmImage: 'windows-latest'
 
 variables:
