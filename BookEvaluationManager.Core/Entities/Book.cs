@@ -12,10 +12,10 @@ namespace BookEvaluationManager.Core.Entities
         public BookGenre BookGenre { get; set; }
         public DateTime YearOfPublication { get; set; }
         public int NumberOfPages { get; set; }
-        public decimal AverageGrade { get; set; }
+        public decimal? AverageGrade { get; set; }
         public byte[] BookCover { get; set; }
 
-        public virtual List<Evaluation> Evaluations { get; set; }
+        public virtual ICollection<Evaluation> Evaluations { get; set; }
 
     }
 }

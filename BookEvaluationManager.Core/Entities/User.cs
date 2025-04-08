@@ -4,6 +4,6 @@
     {
         public string Email { get; set; }
         public string Nome { get; set; }
-        public virtual List<Evaluation> Evaluations { get; set; }
+        public virtual ICollection<Evaluation> Evaluations { get; set; }
     }
 }
